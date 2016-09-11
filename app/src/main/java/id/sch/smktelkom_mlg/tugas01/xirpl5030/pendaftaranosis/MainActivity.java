@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private void doClick() {
         String nama = etNama.getText().toString();
         String hasil2 = null;
-        String hasil4 = "Jabatan                   : ";
+        String hasil4 = "Jabatan                  : ";
         int startlen = hasil4.length();
 
         if (nama.isEmpty()) {
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             etNama.setError(null);
         }
-        tvHasil.setText("Selamat Anda Telah Terdaftar \n Nama                     : " + nama);
+        tvHasil.setText("Selamat Anda Telah Terdaftar \n Nama                       : " + nama);
 
         if (rgJK.getCheckedRadioButtonId() != -1) {
             RadioButton rb = (RadioButton)
@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
             hasil2 = rb.getText().toString();
         }
         if (hasil2 == null) {
-            tvHasil2.setText("Jenis Kelamin            : -");
+            tvHasil2.setText("Jenis Kelamin      : -");
         } else {
-            tvHasil2.setText("Jenis Kelamin            : " + hasil2);
+            tvHasil2.setText("Jenis Kelamin      : " + hasil2);
         }
 
         tvHasil3.setText("Kelas                         : " + spKelas.getSelectedItem().toString());
